@@ -19,7 +19,6 @@ Helix is an AI Orchestration Platform that provides the primitives to build, rou
 - TypeScript
 - Vite
 - Tailwind CSS
-- GSAP (GreenSock Animation Platform) for scroll-linked 3D transitions
 
 ## Getting Started
 

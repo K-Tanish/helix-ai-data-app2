@@ -106,14 +106,13 @@ export function CubeGraphic({ className = '' }: { className?: string }) {
         >
           {/* outer cube — clockwise */}
           <div
-            className="absolute left-1/2 top-1/2"
+            className="absolute left-1/2 top-1/2 animate-spinY"
             style={{
               width: outerSize,
               height: outerSize,
               marginLeft: -outerSize / 2,
               marginTop: -outerSize / 2,
               transformStyle: 'preserve-3d',
-              animation: 'spinY 18s linear infinite',
             }}
           >
             <Face transform={`translateZ(${half}px)`} size={outerSize} />
@@ -131,14 +130,13 @@ export function CubeGraphic({ className = '' }: { className?: string }) {
 
           {/* inner cube — counter-clockwise */}
           <div
-            className="absolute left-1/2 top-1/2"
+            className="absolute left-1/2 top-1/2 animate-spinYReverse"
             style={{
               width: innerSize,
               height: innerSize,
               marginLeft: -innerSize / 2,
               marginTop: -innerSize / 2,
               transformStyle: 'preserve-3d',
-              animation: 'spinYReverse 14s linear infinite',
             }}
           >
             <Face transform={`translateZ(${innerHalf}px)`} size={innerSize} />
